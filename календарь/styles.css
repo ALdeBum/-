@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#current-date {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#date-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#days-of-week div, #calendar div {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 2px;
+    width: 100%;
+}
+
+#calendar div {
+    cursor: pointer;
+}
+
+.winter {
+    background-image: url('images/winter.jpg');
+}
+
+.spring {
+    background-image: url('images/spring.jpg');
+}
+
+.summer {
+    background-image: url('images/summer.jpg');
+}
+
+.autumn {
+    background-image: url('images/autumn.jpg');
+}
